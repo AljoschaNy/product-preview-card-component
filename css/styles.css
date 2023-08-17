@@ -1,5 +1,4 @@
-/* generell styles */
-
+/* page styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,26 +14,59 @@ html {
 .container {
     width: 375px;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 /* card styles */
 .product-card {
-    border: 1px solid black;
-    height: 611px;
-    
     display: flex;
     flex-direction: column;
+    margin: 28px 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
 }
 
 .product-img {
     order: 1;
-}
-
-.product-info {
-    order: 2;
+    height: 240px;
+    
 }
 
 .product-img > img {
     width: 100%;
     object-fit: cover;
+    /* fill up whole container fix */
+    height: inherit;
 }
+
+.product-info {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-copy {
+    margin: 24px ;
+}
+
+.pricing {
+    margin: 0 24px 24px;
+}
+
+.price-now,
+.price-before {
+    display: inline-block;
+}
+
+.btn-cart {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
