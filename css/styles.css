@@ -1,0 +1,40 @@
+/* generell styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+/* card styles */
+.product-card {
+    border: 1px solid black;
+    height: 611px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img {
+    order: 1;
+}
+
+.product-info {
+    order: 2;
+}
+
+.product-img > img {
+    width: 100%;
+    object-fit: cover;
+}
